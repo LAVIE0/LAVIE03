@@ -194,18 +194,19 @@ ul {
 }
 .informacoes a {
   font-family: Pacifico;
-  font-size: 1.7em;
+  font-size: 1.6em;
   max-width: 150px;
   background: #cc99ff;
   color: #fff;
   border-radius: 25px;
-  padding: 5px 15px;
+  padding: 5px 7px;
   margin-right: 10px;
-  width: 150px;
+  width: 100px;
   text-align: center;
 }
 .informacoes li:first-child {
   font-family: Pacifico;
+  max-width: 200px;
   font-size: 1em;
 }
 .informacoes a:hover {
