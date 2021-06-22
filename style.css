@@ -261,7 +261,9 @@ ul {
   font-family: pacifico;
   font-size: 1.5em;
 }
-
+.modal-info li {
+  margin-left: -30px;
+}
 .modal-info p {
   max-width: 450px;
   font-size: 1rem;
@@ -280,8 +282,11 @@ ul {
   padding: 10px 10px;
   display: flex;
 }
+.btn img {
+  margin-left: 7px;
+}
 .btn a {
-  margin-right: 10px;
+  margin-left: 9px;
   color: #fff;
 }
 .btn:hover {
