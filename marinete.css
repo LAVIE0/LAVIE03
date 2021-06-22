@@ -5,6 +5,8 @@ body {
 }
 #container {
   display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 .texto-card hr {
   width: 720px;
@@ -15,15 +17,20 @@ body {
   margin: 20px 0 20px 20px;
   font-family: Pacifico;
 }
-
+#imagens {
+  margin-top: -43px;
+}
 #imagens img {
   margin: 20px 25px;
 }
-@media (max-width: 720px) {
+@media (max-width: 1113px) {
   #container {
     flex-wrap: wrap;
   }
   .texto-card hr {
     width: 390px;
+  }
+  #imagens {
+    margin-top: 0px;
   }
 }
