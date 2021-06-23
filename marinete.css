@@ -21,6 +21,9 @@ body {
   margin: 20px 0 20px 0px;
   font-family: Pacifico;
 }
+.info ul li:first-child {
+  font-size: 1.5em;
+}
 
 #imagens img {
   margin: 20px 10px;
