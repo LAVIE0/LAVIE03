@@ -1,29 +1,24 @@
-
 var modal = document.querySelectorAll('a[href^="#"]');
-var div = document.querySelector('.modal-overlay');
-
-function adicionarClasse(){
-    div.classList.add('ativo');
-    }
-modal[0].addEventListener('click', adicionarClasse)
-var div2 = document.querySelector('.modal-overlay1');
-
-function adicionarClasse1(){
-    div2.classList.add('ativo')
+var divs = document.querySelectorAll('.modal-overlay')
+function adicionarClasse(index){
+    divs[index].classList.add('ativo');
 }
-modal[1].addEventListener('click', adicionarClasse1)
 
-var div3 = document.querySelector('.modal-overlay2');
+modal.forEach((itemModal, index)=>{
+    itemModal.addEventListener('click', function(){
+        adicionarClasse(index);
+    })
+})
+var exit = document.querySelectorAll(".exit img");
+function sairModal(index){
+    divs[index].classList.remove('ativo');
+}
+exit.forEach((itemImg, index)=>{
+    itemImg.addEventListener('click', function(){
+        sairModal(index);
+    })
+})
 
-function adicionarClasse2(){
-div3.classList.add('ativo');
-}
-function sairModal(){
-    div.classList.remove('ativo');   
-    div2.classList.remove('ativo');
-    div3.classList.remove('ativo');
-}
-modal[2].addEventListener('click', adicionarClasse2)
 
 
 function entrouMouse(){

@@ -138,22 +138,21 @@ th {
 #cards {
   max-width: 1120px;
   display: flex;
+  flex-wrap: wrap;
   margin: 0 auto;
-  align-items: baseline;
 }
 @media (max-width: 920px) {
   #cards {
     flex-wrap: wrap;
   }
 }
-hr {
-  margin: 20px 0 0 0;
+.texto-card hr {
+  margin: 20px auto;
   border-color: #ffdede;
 }
 .texto-card {
-  max-width: 800px;
-  margin: 0 20px;
-  align-items: center;
+  flex: 1;
+  margin: 20px 20px;
   box-shadow: 0 0 1em #707070;
 }
 @media (max-width: 920px) {
@@ -182,7 +181,7 @@ ul {
   margin-left: 30px;
 }
 .texto-card hr {
-  width: 350px;
+  width: 450px;
 }
 .info {
   display: flex;
